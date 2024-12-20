@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miso Kim</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/typeit@8.3.3/dist/index.umd.js"></script>
+    <script src="animation.js"></script>
+  </head>
+  <body style="overflow-x: hidden">
+    <div class="home-container">
+      <!-- Header with navigation -->
+      <header>
+        <nav class="home-nav-links">
+          <a href="project.html" class="home-nav-item"
+            >Project&nbsp;&nbsp;&nbsp;&nbsp;</a
+          >
+          <a href="aboutme.html" class="home-nav-item"
+            >About me&nbsp;&nbsp;&nbsp;&nbsp;</a
+          >
+          <a href="contact.html" class="home-nav-item">Contact</a>
+        </nav>
+      </header>
+      <!-- Main content -->
+
+      <main>
+        <!-- Hero section -->
+        <section class="home-hero">
+          <h1 class="home-hero-title">Hello. I’m Miso</h1>
+          <h2 class="home-hero-subtitle">A Graphic Designer</h2>
+          <p class="home-showreel" class="text-blocker">Showreel</p>
+          <div class="M-home-video-placeholder">
+            <iframe
+              width="1186"
+              height="668"
+              src="https://www-ccv.adobe.io/v1/player/ccv/3hM3iFvH4-b/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+        </section>
+
+        <!-- Project section -->
+        <section class="home-section" id="work" data-scroll-trigger>
+          <h2 id="project" class="text-blocker">Project</h2>
+          <div class="home-image-placeholder text-blocker">
+            <a href="project.html">
+              <img
+                src="Project.png"
+                alt="Project Image"
+                class="home-project-image"
+              />
+            </a>
+          </div>
+        </section>
+
+        <!-- About Me section -->
+        <section
+          class="home-section home-about-section"
+          id="about"
+          data-scroll-trigger
+        >
+          <div class="home-about-layout text-blocker">
+            <div class="home-image-placeholder2 text-blocker">
+              <img
+                src="aboutme.jpg"
+                alt="MisoKim"
+                class="home-about-image"
+                width="600"
+              />
+            </div>
+            <div class="home-about-content">
+              <h2 id="about-me" class="text-blocker">About Me</h2>
+              <hr class="home-section-line" />
+              <p id="aboutMeParagraph" class="text-blocker">
+                Hello, I'm <strong>Miso Kim</strong>, a graphic designer. I was
+                born in South Korea and majored in visual communication design.
+                After gaining
+                <strong>three and a half years of experience</strong> at a video
+                production company, I am currently pursuing a
+                <strong>Master’s degree in Interactive Digital Media</strong> at
+                Trinity College Dublin.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact section -->
+        <section
+          class="home-section home-contact-section"
+          id="contact"
+          data-scroll-trigger
+        >
+          <h2 id="contact" class="text-blocker">Contact</h2>
+          <p class="text-blocker">If you would like to contact me</p>
+          <div class="home-contact-button">
+            <a href="contact.html" class="project-nav-link">CLICK HERE</a>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <tbody class="text-center" id="htmlTbody">
+      <tr>
+        <td class="align-middle">쿠키 생성하기</td>
+        <td>
+          <button class="cookies" onclick="getCookies();">Get Cookies</button>
+        </td>
+      </tr>
+      <tr>
+        <td class="align-middle">쿠키 생성하기</td>
+        <td>
+          <button class="cookies" onclick="setCookies()">Set Cookies</button>
+        </td>
+      </tr>
+      <tr>
+        <td class="align-middle">쿠키 삭제하기</td>
+        <td>
+          <button class="cookies" onclick="delCookies()">Del Cookies</button>
+        </td>
+      </tr>
+    </tbody>
+  </body>
+</html>
